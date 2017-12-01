@@ -17,24 +17,24 @@ class Category:
 
 def main():
     filename = ''
-    if len(sys.argv) > 1:
-        filename = sys.argv[1]
-    
+    if len(sys.argv) > 2:
+        filename = sys.argv[2]
+        
         if not os.path.exists(filename):
             print('Invalid file')
-            print('Usage: ./process.py <filename>')
+            print('Usage: ./process.py <command> <filename>')
+            print('Commands:')
+            print('\tprint - Prints formatted contents of csv')
             return 1
     else:
-        print('Usage: ./process.py <filename>')
+        print('Usage: ./process.py <command> <filename>')
+        print('Commands:')
+        print('\tprint - Prints formatted contents of csv')
         return 1
 
     data = []
     with open(filename) as f:
-        headers = []
-        headers.append(f.readline().split(","))
-        headers.append(f.readline().split(","))
-        headers.append(f.readline().split(","))
-        headers.append(f.readline().split(","))
+        headers = [f.readline().rstrip().split(',') for i in range(4)]
         cols = [''] * len(headers[0])
         for h in headers:
             for i in range(len(h)):
@@ -47,17 +47,16 @@ def main():
 
         while line != '':
             commas = 0
-            if re.search(r'(?:[^,\d]|^)(\d{1,3}(?:,\d{3})*)(?:[^,\d]|$)', line): #income
+            if '$' in line:#re.search(r'(?:[^,\d]|^)(\d{1,3}(?:,\d{3})*)(?:[^,\d]|$)', line): #income
                 for i in range(len(line)):
                     if line[i] == ",":
                         commas += 1
                         if commas == 2 or commas == 3:
                             line = line[:i] + '#' + line[i + 1:]
-            line = re.sub(r'[#"\']', '', line)
+                line = re.sub(r'[#]', '', line)
             if re.sub(r'[,]', '', line) != '' and 'Source:' not in line:
-                row = line.split(',')
+                row = re.split(r'[,"]', line)
                 data.append(row)
-                print(row)
             line = f.readline().rstrip()
 
     category = ''
@@ -73,7 +72,7 @@ def main():
                 while sub == '':
                     sr += 1
                     sub = data[sr][0]
-                categories[category] = [(r,sr), dict(), dict(), dict()]
+                categories[category] = ((r, sr), dict(), dict(), dict())
                 print(category)
                 print(categories[category])
                 #all_data.append([dict(), dict(), dict()]) #dem, rep, ind

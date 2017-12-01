@@ -20,21 +20,18 @@ def main():
 
     data = []
     with open(filename) as f:
-        headers = []
-        headers.append(f.readline().split(","))
-        headers.append(f.readline().split(","))
-        headers.append(f.readline().split(","))
-        headers.append(f.readline().split(","))
+        headers = [f.readline().rstrip().split(',') for i in range(4)]
         cols = [''] * len(headers[0])
         for h in headers:
             for i in range(len(h)):
                 cols[i] = cols[i] + h[i]
-        print(cols)
+        print('\t', cols)
             
         line = f.readline().rstrip()
         row = line.split(",")
         data.append(row)
 
+        num = 0
         while line != '':
             commas = 0
             if '$' in line:#re.search(r'(?:[^,\d]|^)(\d{1,3}(?:,\d{3})*)(?:[^,\d]|$)', line): #income
@@ -47,7 +44,8 @@ def main():
             if re.sub(r'[,]', '', line) != '' and 'Source:' not in line:
                 row = re.split(r'[,"]', line)
                 data.append(row)
-                print(row)
+                print(num, '\t', row)
+                num += 1
             line = f.readline().rstrip()
 
     return 0
