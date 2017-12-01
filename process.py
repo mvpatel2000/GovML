@@ -16,16 +16,16 @@ class Category:
 
 
 def main():
-    filename = ""
+    filename = ''
     if len(sys.argv) > 1:
         filename = sys.argv[1]
     
         if not os.path.exists(filename):
-            print("Invalid file")
-            print("Usage: ./process.py <filename>")
+            print('Invalid file')
+            print('Usage: ./process.py <filename>')
             return 1
     else:
-        print("Usage: ./process.py <filename>")
+        print('Usage: ./process.py <filename>')
         return 1
 
     data = []
@@ -35,34 +35,51 @@ def main():
         headers.append(f.readline().split(","))
         headers.append(f.readline().split(","))
         headers.append(f.readline().split(","))
-        cols = [""] * len(headers[0])
+        cols = [''] * len(headers[0])
         for h in headers:
             for i in range(len(h)):
                 cols[i] = cols[i] + h[i]
         print(cols)
             
-        line = f.readline()
+        line = f.readline().rstrip()
         row = line.split(",")
         data.append(row)
 
-        while line != "":
-            row = line.split(",")
-            data.append(row)
-            line = f.readline()
+        while line != '':
+            commas = 0
+            if re.search(r'(?:[^,\d]|^)(\d{1,3}(?:,\d{3})*)(?:[^,\d]|$)', line): #income
+                for i in range(len(line)):
+                    if line[i] == ",":
+                        commas += 1
+                        if commas == 2 or commas == 3:
+                            line = line[:i] + '#' + line[i + 1:]
+            line = re.sub(r'[#"\']', '', line)
+            if re.sub(r'[,]', '', line) != '' and 'Source:' not in line:
+                row = line.split(',')
+                data.append(row)
+                print(row)
+            line = f.readline().rstrip()
 
-    all_data = []
-
-    last_category = ""
+    category = ''
     categories = dict()
-    category = 0
     for r in range(len(data)):
-        if "  " not in data[r][1]:
-            if data[r][0] != "" and data[r][1] != "" and data[r][-2] != "" and data[r][0].upper() == data[r][0]:
-                last_category = data[r][0]
-                if last_category not in categories:
-                    categories[last_category] = category
-                    #all_data.append([dict(), dict(), dict()]) #dem, rep, ind
-                    category += 1
+        #if "  " not in data[r][1]:
+            #if data[r][0] != '' and data[r][1] != '' and data[r][-2] != '' and data[r][0].upper() == data[r][0]:
+        if data[r][0] != '':
+            category = data[r][0]
+            if category not in categories:
+                sub = ''
+                sr = r
+                while sub == '':
+                    sr += 1
+                    sub = data[sr][0]
+                categories[category] = [(r,sr), dict(), dict(), dict()]
+                print(category)
+                print(categories[category])
+                #all_data.append([dict(), dict(), dict()]) #dem, rep, ind
+        else:
+            if '\t' in data[r][1]:
+                print("subcategory")
             
                 
         #print(last_category)

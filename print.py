@@ -11,38 +11,45 @@ def main():
 
         if not os.path.exists(filename):
             print("Invalid file")
-            print("Usage: ./process.py <filename>")
+            print("Usage: ./print.py <filename>")
             return 1
     
     else:
-        print("Usage: ./process.py <filename>")
+        print("Usage: ./print.py <filename>")
         return 1
 
     data = []
-    num = 1
     with open(filename) as f:
         headers = []
         headers.append(f.readline().split(","))
         headers.append(f.readline().split(","))
         headers.append(f.readline().split(","))
         headers.append(f.readline().split(","))
-        cols = [""] * len(headers[0])
+        cols = [''] * len(headers[0])
         for h in headers:
             for i in range(len(h)):
                 cols[i] = cols[i] + h[i]
-        print(str(num) + " " + str(cols))
+        print(cols)
             
-        num += 1
-        line = f.readline()
+        line = f.readline().rstrip()
         row = line.split(",")
         data.append(row)
 
-        while line != "":
-            row = line.split(",")
-            data.append(row)
-            line = f.readline()
-            print(str(num) + " " + str(row))
-            num += 1
+        while line != '':
+            commas = 0
+            if re.search(r'(?:[^,\d]|^)(\d{1,3}(?:,\d{3})*)(?:[^,\d]|$)', line): #income
+                for i in range(len(line)):
+                    if line[i] == ",":
+                        commas += 1
+                        if commas == 2 or commas == 3:
+                            line = line[:i] + '#' + line[i + 1:]
+            line = re.sub(r'[#"\']', '', line)
+            if re.sub(r'[,]', '', line) != '' and 'Source:' not in line:
+                row = line.split(',')
+                data.append(row)
+                print(row)
+            line = f.readline().rstrip()
+
     return 0
             
                 
