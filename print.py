@@ -37,15 +37,15 @@ def main():
 
         while line != '':
             commas = 0
-            if re.search(r'(?:[^,\d]|^)(\d{1,3}(?:,\d{3})*)(?:[^,\d]|$)', line): #income
+            if '$' in line:#re.search(r'(?:[^,\d]|^)(\d{1,3}(?:,\d{3})*)(?:[^,\d]|$)', line): #income
                 for i in range(len(line)):
                     if line[i] == ",":
                         commas += 1
                         if commas == 2 or commas == 3:
                             line = line[:i] + '#' + line[i + 1:]
-            line = re.sub(r'[#"\']', '', line)
+                line = re.sub(r'[#]', '', line)
             if re.sub(r'[,]', '', line) != '' and 'Source:' not in line:
-                row = line.split(',')
+                row = re.split(r'[,"]', line)
                 data.append(row)
                 print(row)
             line = f.readline().rstrip()
