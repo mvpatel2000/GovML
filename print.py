@@ -25,7 +25,6 @@ def main():
         for h in headers:
             for i in range(len(h)):
                 cols[i] = cols[i] + h[i]
-        cols = cols[:1] + cols[7:10]
         print('\t', cols)
             
         line = f.readline().rstrip()
@@ -44,7 +43,6 @@ def main():
                 line = re.sub(r'[#]', '', line)
             if re.sub(r'[,]', '', line) != '' and 'Source:' not in line:
                 row = re.split(r'[,"]', line)
-                row = row[:1] + row[7:10]
                 data.append(row)
                 print(num, '\t', row)
                 num += 1

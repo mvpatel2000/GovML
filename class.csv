@@ -1,0 +1,199 @@
+Factor,Type,% Lean Republican,% Lean Democrat,% No Leaning
+Religion,Mormonism,70,19,11
+Religion,Catholicism,37,44,19
+Religion,Judaism,26,64,10
+Religion,Islam,17,62,21
+Religion,Atheism,15,69,16
+Religion,Buddhism,16,69,15
+Religion,Agnosticism,21,64,15
+Religion,Hinduism,13,61,26
+Religion,Mainline Protestantism,51,39,10
+Religion,Evangelical Protestantism,70,24,6
+Religion,Mormonism,70,22,8
+Religion,Jewish,26,64,9
+Military,Veterans,34,29,33
+Military,General Public,26,38,29
+Education,Postgraduate,24,54,22
+Education,College Degree,29,44,27
+Education,Some College,28,36,36
+Education,HS or Less,26,26,48
+Religious Service Attendance,Weekly,46,37,17
+Religious Service Attendance,Once or Twice a Month,36,47,17
+Religious Service Attendance,Seldom/ never,28,51,21
+Prayer Frequency,Daily,42,40,18
+Prayer Frequency,Weekly,38,45,17
+Prayer Frequency,Monthly,34,46,20
+Prayer Frequency,Seldom/ never,26,55,20
+Attendance of Prayer Groups,Weekly,45,36,19
+Attendance of Prayer Groups,Once or Twice a Month,41,43,16
+Attendance of Prayer Groups,Several times a year,41,41,17
+Attendance of Prayer Groups,seldom/ never,33,49,19
+Marital Status,Married,35,32,32
+Marital Status,Unmarried,19,41,38
+Interprtation of Scripture,Word of God/ Taken literally,44,38,18
+Interprtation of Scripture,Word of God/  Not taken literally,46,38,16
+Interprtation of Scripture,Word of God / Don't Know,42,29,28
+Interprtation of Scripture,Not the Word of God,29,42,29
+Belief in Heaven,Believe,41,41,18
+Belief in Heaven,Don't believe,23,58,18
+Military Veteran,all,29,20,49
+Military Veteran,ages 18-49,25,16,59
+Military Veteran,ages 50+,32,22,44
+Military Veteran,college grad,22,24,54
+Military Veteran,non college grad,33,19,47
+Marriage,Happy with family member marrying gun owner,51,18,31
+Marriage,Unhappy with family member marrying gun owner,17,54,29
+Marriage,Don't care about family member marrying gun owner,31,37,32
+Marriage,Happy with family member marrying someone who didn't go to college,30,40,29
+Marriage,Unhappy with family member marrying someone who didn't go to college,33,39,29
+Marriage,Don't care about family member marrying someone who didn't go to college,32,36,32
+Marriage,Happy with family member marrying someone of a different race,27,43,31
+Marriage,Unhappy with family member marrying someone of a different race,49,24,27
+Marriage,Don't care about family member marrying someone of a different race,31,37,32
+Marriage,Happy with family member marrying someone born/raised outside U.S.,29,36,35
+Marriage,Unhappy with family member marrying someone born/raised outside U.S.,41,32,27
+Growing Up Family,Supported Same Party,44,56,0
+Growing Up Family,Supported Opposite Party,66,34,0
+Growing Up Family,Other,50,50,0
+Political Affiliation Character,Says a Lot,47,53,0
+Political Affiliation Character,Doesn't Say Much,56,44,0
+Political Affiliation Character,Other,33,67,0
+Friends Sharing Views,Most friends,56,44,0
+Friends Sharing Views,Some friends,53,47,0
+Friends Sharing Views,Don't know,36,64,0
+Discussing Politics,Every Day,59,41,0
+Discussing Politics,Few times a week,53,47,0
+Discussing Politics,Few Times a month,52,48,0
+Discussing Politics,Less Often,39,61,0
+Marriage Status,Maried,48,41,12
+Marriage Status,Living with a partner,31,55,14
+Marriage Status,Divorced/Seperated,32,54,14
+Marriage Status,Widowed,40,49,11
+Marriage Status,Never Married,30,56,14
+Parent Or Guardian,Yes,38,47,15
+Parent Or Guardian,No,39,48,13
+Perception of News Media,News media gets the facts straight,18,82,0
+Perception of News Media,News media doesn't get the facts straight,69,31,0
+Community,Important to live in a community with a mix of people from different racial/ethnic backgrounds,25,43,32
+Community,Important to live in a community with many people who share your religious beliefs,43,29,28
+Social Media,Follow a political figure online,55,45,0
+Technology,Use smartphones to keep up with election news,46,54,0
+Polarity,See the opposing political party’s policies as a threat to the nation’s well-being,57,43,0
+Polarity,View the opposite party in strongly negative terms,53,47,0
+Immigration/Foreign Nationality,Hispanics residing in U.S. for <10 years that strongly identify as,9,26,65
+Immigration/Foreign Nationality,Hispanics residing in U.S. for <10 years that strongly identify as,10,32,58
+TV News Channels,Fox News,49,39,12
+TV News Channels,CNN,23,64,13
+TV News Channels,MSNBC,25,60,15
+TV News Channels,Nightly Network News,29,59,12
+Occupation,Social & Environment,7,93,0
+Occupation,Film & Stage Prod.,7,93,0
+Occupation,Editorial,8,92,0
+Occupation,Libraries,9,91,0
+Occupation,Mental Health,10,90,0
+Occupation,Academia,10,90,0
+Occupation,Art Management,11,89,0
+Occupation,Writing,12,88,0
+Occupation,Performing Arts,13,87,0
+Occupation,Research,14,86,0
+Occupation,Visual Arts,16,84,0
+Occupation,Media Production,17,83,0
+Occupation,Academic Admin.,17,83,0
+Occupation,Social Science,20,80,0
+Occupation,Fitness,20,80,0
+Occupation,Fundraising & Philan.,20,80,0
+Occupation,Teaching,21,79,0
+Occupation,Science & Math,22,78,0
+Occupation,Planning & Arch.,25,75,0
+Occupation,IT,26,74,0
+Occupation,Legal,27,73,0
+Occupation,Publishing,27,73,0
+Occupation,Engineering,29,71,0
+Occupation,Foodservice,30,70,0
+Occupation,Public Relations,32,68,0
+Occupation,Civil Service,33,67,0
+Occupation,Religion,36,64,0
+Occupation,Sports & Games,38,62,0
+Occupation,Personal Services,39,61,0
+Occupation,Medical Services,39,61,0
+Occupation,Garden & Landscape,40,60,0
+Occupation,Retail Trade,41,59,0
+Occupation,Business Operations,42,58,0
+Occupation,Labor,42,58,0
+Occupation,Support Staff,46,54,0
+Occupation,Restaurant & Bar,47,53,0
+Occupation,Physicians,47,53,0
+Occupation,Skilled Trade,48,52,0
+Occupation,Hospitality,51,49,0
+Occupation,Law Enforcement,51,49,0
+Occupation,Animal Care,52,48,0
+Occupation,Real Estate,53,47,0
+Occupation,Investment Banking,53,47,0
+Occupation,Business Leadership,55,45,0
+Occupation,Financial Services,55,45,0
+Occupation,Accounting,55,45,0
+Occupation,Aviation,57,43,0
+Occupation,Wholesaling,57,43,0
+Occupation,Retail Banking,59,41,0
+Occupation,Military,60,40,0
+Occupation,Sales,60,40,0
+Occupation,Entrepreneurial,61,39,0
+Occupation,Transportation,61,39,0
+Occupation,Home Management,61,39,0
+Occupation,Dentistry,63,37,0
+Occupation,Construction,65,35,0
+Occupation,Insurance,66,34,0
+Occupation,Surgical Practice,69,31,0
+Occupation,Farming & Forestry,72,28,0
+Occupation,Fossil Fuels,89,11,0
+Income Bracket,<$15K,32,68,0
+Income Bracket,$15K to $30K,41.5,58.5,0
+Income Bracket,$30K to $50K,47.5,52.5,0
+Income Bracket,$50K to $75K,54.5,45.5,0
+Income Bracket,$75K to $100K,52,48,0
+Income Bracket,$100K+,55,45,0
+Gender,Male,36,52,12
+Gender,Female,43,44,13
+Race,White,49,40,11
+Race,Black,11,80,9
+Race,Asian,23,65,12
+Race,Hispanic,26,56,18
+Opinion on Media,News media criticism keeps leaders in line,21,44,35
+Opinion on Media,News organizations tend to favor one side,41,25,34
+Opinion on Media,Watch network news regularly,58,40,2
+Opinion on Media,Trust national news organizations a lot,25,75,0
+Opinion on Media,The national media keeps them informed,27,50,23
+Opinion on Media,Media should emphasize a candidate’s inaccurate statement,46,54,0
+Opinion on Media,Fact checking is a major responsibility of the media,40,60,0
+Opinion on Media,National media has a positive effect on US affairs,19,81,0
+Opinion ,College has a positive effect on national affairs,66,33,1
+Opinion ,Labor unions have a positive effect on US affairs,36,64,0
+Opinion ,Financial institutions have a positive effect on US affairs,58,42,0
+Opinion ,Religious organizations have a positive effect on US affairs,60,40,0
+Opinion ,Life in America today is better than it was 50 years ago,56,44,0
+Opinion ,The future will be worse for the next generation,48,52,0
+Opinion ,View military “very warmly”,39,32,29
+Opinion ,View police “very warmly”,49,22,29
+Opinion ,View teachers “very warmly”,29,41,30
+Opinion ,View college professors “very warmly”,20,50,30
+Gender,Female,54,38,8
+Gender,Male,51,41,8
+Race/Religion,Asian Atheist,21,63,16
+Race/Religion,Asian Hindu,9,72,19
+Race/Religion,Asian Buddhist,27,56,17
+Race/Religion,Asian Catholic,42,41,17
+Race/Religion,Asian Evangelical,56,28,16
+Race/Religion,Asian Mainline,47,44,9
+Race/Religion,Asian Protestant,47,36,17
+Race/Religion,White Evangelical,68,22,10
+Race/Religion,White Southerner,55,34,11
+Race/Religion,Mormon,70,22,8
+Religion,Jewish,31,61,8
+Religion,Atheist,25,61,14
+Race,Black,11,80,9
+Race,Hispanic,26,56,18
+Race,Asian,32,52,16
+Race,White,49,40,11
+Age,60-86,47,43,10
+Age,18-33,35,51,14
+Education,Post Grad Woman,29,64,7
