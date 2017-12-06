@@ -70,11 +70,12 @@ def main():
                 sub = ''
                 sr = r
                 while sub == '':
-                    sr += 1
                     sub = data[sr][0]
+                    sr += 1
                 categories[category] = ((r, sr), dict(), dict(), dict())
                 print(category)
                 print(categories[category])
+                print(sr)
                 #all_data.append([dict(), dict(), dict()]) #dem, rep, ind
         else:
             if '\t' in data[r][1]:
