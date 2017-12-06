@@ -5,17 +5,17 @@ import re
 
 
 def main():
-    filename = ""
+    filename = ''
     if len(sys.argv) > 1:
         filename = sys.argv[1]
 
         if not os.path.exists(filename):
             print("Invalid file")
-            print("Usage: ./print.py <filename>")
+            print("Usage: ./convert.py <filename>")
             return 1
     
     else:
-        print("Usage: ./print.py <filename>")
+        print("Usage: ./convert.py <filename>")
         return 1
 
     data = []
@@ -25,7 +25,7 @@ def main():
         for h in headers:
             for i in range(len(h)):
                 cols[i] = cols[i] + h[i]
-        cols = cols[:1] + cols[7:10]
+#        cols = cols[:2] + cols[7:10]
         print('\t', cols)
             
         line = f.readline().rstrip()
@@ -44,12 +44,16 @@ def main():
                 line = re.sub(r'[#]', '', line)
             if re.sub(r'[,]', '', line) != '' and 'Source:' not in line:
                 row = re.split(r'[,"]', line)
-                row = row[:1] + row[7:10]
+#                row = row[:2] + row[7:10]
                 data.append(row)
-                print(num, '\t', row)
+                print(len(row), '\t', row)
                 num += 1
             line = f.readline().rstrip()
-
+    out = 'out.csv'
+    with open(out, 'w+') as f:
+        f.write(','.join(cols) + '\n')
+        for r in data:
+            f.write(','.join(r) + '\n')
     return 0
             
                 
