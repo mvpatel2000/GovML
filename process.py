@@ -56,19 +56,21 @@ def main():
                 line = re.sub(r'[#]', '', line)
             if re.sub(r'[,]', '', line) != '' and 'Source:' not in line:
                 row = re.split(r'[,"]', line)
+                row = row[:1] + row[7:10]
                 data.append(row)
             line = f.readline().rstrip()
 
     category = ''
     categories = dict()
-    for r in range(len(data)):
+    r = 0
+    while r < len(data):
         #if "  " not in data[r][1]:
             #if data[r][0] != '' and data[r][1] != '' and data[r][-2] != '' and data[r][0].upper() == data[r][0]:
         if data[r][0] != '':
             category = data[r][0]
             if category not in categories:
-                sub = ''
                 sr = r
+                sub = data[r + 1][0]
                 while sub == '':
                     sub = data[sr][0]
                     sr += 1
@@ -80,6 +82,7 @@ def main():
         else:
             if '\t' in data[r][1]:
                 print("subcategory")
+        r += 1
             
                 
         #print(last_category)
