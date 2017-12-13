@@ -2,6 +2,7 @@
 import os
 import sys
 import re
+import numpy as np
 
 
 def main():
@@ -42,8 +43,7 @@ def main():
                 row = re.split(r'[,"]', line)
                 row = row[:1] + row[7:10]
                 data.append(row)
-            line = f.readline().rstrip()
-            '''
+            line = f.readline().rstrip()'''
             row = line.split(',')
             data.append(row)
             line = f.readline().rstrip()
@@ -52,11 +52,12 @@ def main():
     categories = dict()
     r = 0
     for r in data:
-        print(r)
-        if r[0] in categories:
-            rep = r[2]
-            dem = r[3]
-            ind = r[4]
+        if r[0] not in categories:
+            categories[r[0]] = [0,0,0]
+        categories[r[0]][0] += float(r[2]) #rep
+        categories[r[0]][1] += float(r[3]) #dem
+        categories[r[0]][2] += float(r[4]) #ind
+
             #categories[r[0]].append()
     '''while r < len(data):
         #if "  " not in data[r][1]:
