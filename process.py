@@ -9,7 +9,7 @@ def main():
     filename = ''
     if len(sys.argv) > 2:
         filename = sys.argv[2]
-        
+
         if not os.path.exists(filename):
             print('Invalid file')
             print('Usage: ./process.py <command> <filename>')
@@ -47,29 +47,28 @@ def main():
             row = line.split(',')
             data.append(row)
             line = f.readline().rstrip()
-            
+
     category = ''
     categories = dict()
     for r in data:
         if r[0] not in categories:
-            categories[r[0]] = [0,0,0]
-        categories[r[0]][0] += float(r[2]) #rep
-        categories[r[0]][1] += float(r[3]) #dem
-        categories[r[0]][2] += float(r[4]) #ind
+            categories[r[0]] = [0, 0, 0]
+        categories[r[0]][0] += float(r[2])  # rep
+        categories[r[0]][1] += float(r[3])  # dem
+        categories[r[0]][2] += float(r[4])  # ind
 
     print(categories)
-            #categories[r[0]].append()
-    matrix = dict() #set([dict(), dict(), dict()] * len(categories.keys()))
+    matrix = dict()
     for r in data:
         if r[0] not in matrix:
             matrix[r[0]] = [dict(), dict(), dict()]
-        
+
         if categories[r[0]][0] == 0:
             matrix[r[0]][0][r[1]] = 0
         else:
             matrix[r[0]][0][r[1]] = float(r[2]) / categories[r[0]][0]
-   
-        if categories[r[0]][1] == 0: 
+
+        if categories[r[0]][1] == 0:
             matrix[r[0]][1][r[1]] = 0
         else:
             matrix[r[0]][1][r[1]] = float(r[3]) / categories[r[0]][1]
@@ -78,33 +77,9 @@ def main():
             matrix[r[0]][2][r[1]] = 0
         else:
             matrix[r[0]][2][r[1]] = float(r[4]) / categories[r[0]][2]
-            
-    '''while r < len(data):
-        #if "  " not in data[r][1]:
-            #if data[r][0] != '' and data[r][1] != '' and data[r][-2] != '' and data[r][0].upper() == data[r][0]:
-        if data[r][0] != '':
-            category = data[r][0]
-            if category not in categories:
-                sr = r
-                sub = data[r + 1][0]
-                while sub == '':
-                    sub = data[sr][0]
-                    sr += 1
-                categories[category] = ((r, sr), dict(), dict(), dict())
-                print(category)
-                print(categories[category])
-                print(sr)
-                #all_data.append([dict(), dict(), dict()]) #dem, rep, ind
-        else:
-            if '\t' in data[r][1]:
-                print("subcategory")
-        r += 1
-            
-    '''         
-        #print(last_category)
-    print(matrix)
+
     return 0
-            
-                
+
+
 if __name__ == '__main__':
     main()
