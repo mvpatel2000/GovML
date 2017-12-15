@@ -50,7 +50,6 @@ def main():
             
     category = ''
     categories = dict()
-    r = 0
     for r in data:
         if r[0] not in categories:
             categories[r[0]] = [0,0,0]
@@ -58,7 +57,28 @@ def main():
         categories[r[0]][1] += float(r[3]) #dem
         categories[r[0]][2] += float(r[4]) #ind
 
+    print(categories)
             #categories[r[0]].append()
+    matrix = dict() #set([dict(), dict(), dict()] * len(categories.keys()))
+    for r in data:
+        if r[0] not in matrix:
+            matrix[r[0]] = [dict(), dict(), dict()]
+        
+        if categories[r[0]][0] == 0:
+            matrix[r[0]][0][r[1]] = 0
+        else:
+            matrix[r[0]][0][r[1]] = float(r[2]) / categories[r[0]][0]
+   
+        if categories[r[0]][1] == 0: 
+            matrix[r[0]][1][r[1]] = 0
+        else:
+            matrix[r[0]][1][r[1]] = float(r[3]) / categories[r[0]][1]
+
+        if categories[r[0]][2] == 0:
+            matrix[r[0]][2][r[1]] = 0
+        else:
+            matrix[r[0]][2][r[1]] = float(r[4]) / categories[r[0]][2]
+            
     '''while r < len(data):
         #if "  " not in data[r][1]:
             #if data[r][0] != '' and data[r][1] != '' and data[r][-2] != '' and data[r][0].upper() == data[r][0]:
@@ -82,7 +102,7 @@ def main():
             
     '''         
         #print(last_category)
-    print(categories)   
+    print(matrix)
     return 0
             
                 
