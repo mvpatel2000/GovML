@@ -46,7 +46,6 @@ def main():
         categories[r[0]][1] += float(r[3])  # dem
         categories[r[0]][2] += float(r[4])  # ind
 
-
     matrix = dict()
     for r in data:
         if r[0] not in matrix:
