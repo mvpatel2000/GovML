@@ -7,6 +7,7 @@ import numpy as np
 
 def main():
     filename = ''
+    command = ''
     if len(sys.argv) > 2:
         filename = sys.argv[2]
 
@@ -16,6 +17,7 @@ def main():
             print('Commands:')
             print('\tprint - Prints formatted contents of csv')
             return 1
+        command = sys.argv[1]
     else:
         print('Usage: ./process.py <command> <filename>')
         print('Commands:')
@@ -32,23 +34,10 @@ def main():
 
         while line != '':
             commas = 0
-            '''if '$' in line:#re.search(r'(?:[^,\d]|^)(\d{1,3}(?:,\d{3})*)(?:[^,\d]|$)', line): #income
-                for i in range(len(line)):
-                    if line[i] == ",":
-                        commas += 1
-                        if commas == 2 or commas == 3:
-                            line = line[:i] + '#' + line[i + 1:]
-                line = re.sub(r'[#]', '', line)
-            if re.sub(r'[,]', '', line) != '' and 'Source:' not in line:
-                row = re.split(r'[,"]', line)
-                row = row[:1] + row[7:10]
-                data.append(row)
-            line = f.readline().rstrip()'''
             row = line.split(',')
             data.append(row)
             line = f.readline().rstrip()
 
-    category = ''
     categories = dict()
     for r in data:
         if r[0] not in categories:
@@ -57,7 +46,7 @@ def main():
         categories[r[0]][1] += float(r[3])  # dem
         categories[r[0]][2] += float(r[4])  # ind
 
-    print(categories)
+
     matrix = dict()
     for r in data:
         if r[0] not in matrix:
@@ -77,6 +66,21 @@ def main():
             matrix[r[0]][2][r[1]] = 0
         else:
             matrix[r[0]][2][r[1]] = float(r[4]) / categories[r[0]][2]
+
+    if command == 'print':
+        print(categories)
+        for k in matrix.keys():
+            print(k)
+            print(' Rep:')
+            for t in matrix[k][0].keys():
+                print('\t{0:100s} {1:5f}'.format(t, matrix[k][0][t]))
+            print(' Dem:')
+            for t in matrix[k][1].keys():
+                print('\t{0:100s} {1:5f}'.format(t, matrix[k][1][t]))
+            print(' Ind:')
+            for t in matrix[k][2].keys():
+                print('\t{0:100s} {1:5f}'.format(t, matrix[k][2][t]))
+            print()
 
     return 0
 
