@@ -5,6 +5,23 @@ import re
 import numpy as np
 
 
+def read_data(filename):
+    data = []
+    with open(filename) as f:
+        cols = f.readline().rstrip().split(',')
+        print(cols)
+        line = f.readline().rstrip()
+        row = line.split(',')
+        data.append(row)
+
+        while line != '':
+            commas = 0
+            row = line.split(',')
+            data.append(row)
+            line = f.readline().rstrip()
+    return data
+
+
 def build_categories(data):
     categories = dict()
     for r in data:
@@ -73,20 +90,7 @@ def main():
         print('\tprint - Prints formatted contents of csv')
         return 1
 
-    data = []
-    with open(filename) as f:
-        cols = f.readline().rstrip().split(',')
-        print(cols)
-        line = f.readline().rstrip()
-        row = line.split(',')
-        data.append(row)
-
-        while line != '':
-            commas = 0
-            row = line.split(',')
-            data.append(row)
-            line = f.readline().rstrip()
-
+    data = read_data(filename)
     categories = build_categories(data)
     matrix = build_matrix(data, categories)
 
