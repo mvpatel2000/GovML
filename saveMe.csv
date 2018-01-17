@@ -27,8 +27,6 @@ DETAILED FAMILY INCOME,<$30000,31,54,15,6995
 EMPLOYED,Full-time,39,47,14,1525
 EMPLOYED,Part-time,37,49,14,531
 EMPLOYED,No,36,49,15,1238
-MARITAL STATUS,Married,48,41,12,6758
-MARITAL STATUS,Unmarried,32,54,14,6168
 DETAILED MARITAL STATUS,Married,48,41,12,6758
 DETAILED MARITAL STATUS,Living with a partner,31,55,14,779
 DETAILED MARITAL STATUS,Divorced/Separated,32,54,14,1740
@@ -81,3 +79,183 @@ RELIGIOUS TRADITION,Jewish,31,61,8,516
 RELIGIOUS TRADITION,Atheist,16,72,12,781
 RELIGIOUS TRADITION,Agnostic,23,69,8,902
 RELIGIOUS TRADITION,Nothing in particular,27,57,16,3300
+Perception of News Media,News media gets the facts straight,18,82,0,1572
+Perception of News Media,News media doesn't get the facts straight,69,31,0,1572
+Perception of News Media,Reading one-sided news is OK,51,34,15,2901
+Community,Important to live in a community with a mix of people from different racial/ethnic backgrounds,25,43,32,3144
+Community,Important to live in a community with many people who share your religious beliefs,43,29,28,3144
+Community,Prefer walkable communities,75,25,0,2901
+Community,Prefer more room in community,77,23,0,2901
+Social Media,Follow a political figure online,55,45,0,223
+Technology,Use smartphones to keep up with election news,46,54,0,968
+Polarity,See the opposing political partys policies as a threat to the nations well-being,57,43,0,1871
+Polarity,View the opposite party in strongly negative terms,53,47,0,1871
+Opinion on Media,News media criticism keeps leaders in line,21,44,35,1472
+Opinion on Media,News organizations tend to favor one side,41,25,34,1472
+Opinion on Media,Watch network news regularly,58,40,2,1808
+Opinion on Media,Trust national news organizations a lot,25,75,0,1472
+Opinion on Media,The national media keeps them informed,27,50,23,1472
+Opinion on Media,Media should emphasize a candidates inaccurate statement,46,54,0,1775
+Opinion on Media,Fact checking is a major responsibility of the media,40,60,0,1775
+Opinion on Media,National media has a positive effect on US affairs,19,81,0,1230
+Opinion,College has a positive effect on national affairs,66,33,1,1230
+Opinion,Labor unions have a positive effect on US affairs,36,64,0,1230
+Opinion,Financial institutions have a positive effect on US affairs,58,42,0,1230
+Opinion,Religious organizations have a positive effect on US affairs,60,40,0,1230
+Opinion,Life in America today is better than it was 50 years ago,56,44,0,1256
+Opinion,The future will be worse for the next generation,48,52,0,1256
+Opinion,View military overy warmly,39,32,29,1814
+Opinion,View police overy warmly,49,22,29,1814
+Opinion,View teachers overy warmly,29,41,30,1814
+Opinion,View college professors overy warmly,20,50,30,1814
+Use News Source,CNN,18.18297554,48.98868537,32.82833909,1256.78
+Use News Source,Fox News,51.98955473,18.44131286,29.56913241,1110.55
+Use News Source,ABC News,23.8585445,41.99049753,34.15095797,1035.52
+Use News Source,NBC News,20.59973676,47.27695859,32.12330466,1048.46
+Use News Source,CBS News,22.90060034,45.1320504,31.96734926,842.86
+Use News Source,MSNBC,19.93968246,53.8271728,26.23314474,802.42
+Use News Source,Yahoo News,27.71871825,37.80500751,34.47627425,659.41
+Use News Source,Google News,22.86747186,41.1584915,35.97403664,608.55
+Use News Source,NPR,11.75102871,72.79304912,15.45592217,653.73
+Use News Source,BBC,14.08144656,66.31550356,19.60304988,515.43
+Use News Source,PBS,14.22397994,66.28339925,19.49262082,518.35
+Use News Source,New York Times,12.37516387,71.56953879,16.05529734,419.55
+Use News Source,Huffington Post,17.51236579,66.23476897,16.25286524,414.45
+Use News Source,Daily Show,6.23615563,78.40408621,15.35975816,383.73
+Use News Source,USA TODAY,28.72553726,45.11874841,26.15571433,354.11
+Use News Source,Colbert Report,9.183737788,74.89442168,15.92184053,317.3
+Use News Source,Wall Street Journal,37.56773221,43.5345795,18.89768829,311.89
+Use News Source,Sean Hannity Show,88.24794246,2.387484244,9.364573293,269.74
+Use News Source,Rush Limbaugh Show,87.4772853,2.544046773,9.978667931,253.14
+Use News Source,Washington Post,18.54825291,67.44176373,14.00998336,240.4
+Use News Source,Glenn Beck Program,88.12668945,3.284541235,8.588769317,196.07
+Use News Source,TheBlaze,87.24910725,7.566802118,5.184090629,162.42
+Use News Source,Drudge Report,79.63364329,8.59260295,11.77375376,143.03
+Use News Source,Politico,22.91709809,65.4586871,11.62421481,144.87
+Use News Source,Al Jazeera America,8.452062927,79.05164737,12.4962897,134.76
+Use News Source,Bloomberg,33.91631252,45.43968617,20.64400131,122.36
+Use News Source,BuzzFeed,12.8472793,66.38993917,20.76278152,121.66
+Use News Source,New Yorker,5.450931157,85.7396945,8.809374346,95.58
+Use News Source,Breitbart,78.47193347,12.77546778,8.752598753,96.2
+Use News Source,Economist,16.28728414,67.1899529,16.52276295,101.92
+Use News Source,Guardian,7.79342723,76.3943662,15.81220657,106.5
+Use News Source,Slate,6.255252731,83.63549046,10.10925681,83.29
+Trust New Source,CNN,16.35574492,49.55767482,34.08658026,1506.81
+Trust New Source,ABC News,18.65114406,48.03930572,33.30955022,1415.57
+Trust New Source,NBC News,16.98432066,51.13247504,31.88320431,1426.08
+Trust New Source,CBS News,18.11663443,49.70149596,32.18186961,1308.19
+Trust New Source,Fox News,51.96190231,16.25736818,31.78072951,1245.22
+Trust New Source,MSNBC,14.26599464,55.91245516,29.8215502,1101.15
+Trust New Source,PBS,12.51179337,64.89513637,22.59307026,1155.31
+Trust New Source,BBC,13.8529957,64.61778699,21.52921731,1095.07
+Trust New Source,New York Times,9.739684436,65.95291424,24.30740132,1004.55
+Trust New Source,USA TODAY,21.04790062,44.30076784,34.65133154,923.37
+Trust New Source,Wall Street Journal,28.213773,46.14564754,25.64057946,919.48
+Trust New Source,NPR,8.970288171,73.57360306,17.45610877,916.47
+Trust New Source,Washington Post,13.67194769,62.3016513,24.026401,806.03
+Trust New Source,Google News,19.87001596,45.01991459,35.11006945,695.47
+Trust New Source,Yahoo News,19.05985573,46.93929994,34.00084433,544.81
+Trust New Source,Huffington Post,12.4040545,67.496052,20.0998935,544.58
+Trust New Source,Daily Show,4.98183209,78.91566265,16.10250526,522.9
+Trust New Source,Colbert Report,8.965923185,73.33347348,17.70060333,475.69
+Trust New Source,New Yorker,8.918748309,70.20019839,20.8810533,443.56
+Trust New Source,Economist,13.92496392,70.88744589,15.18759019,388.08
+Trust New Source,Rush Limbaugh Show,83.71673078,3.061945513,13.2213237,382.11
+Trust New Source,Sean Hannity Show,85.68671762,1.485412488,12.82786989,393.83
+Trust New Source,Bloomberg,19.62248946,59.49975205,20.87775849,322.64
+Trust New Source,Glenn Beck Program,87.72969953,1.815867892,10.45443258,322.16
+Trust New Source,Al Jazeera America,8.44554489,82.98680596,8.567649154,294.83
+Trust New Source,Drudge Report,77.95175084,7.718163639,14.33008552,235.03
+Trust New Source,Guardian,9.181998063,76.63874037,14.17926157,237.53
+Trust New Source,Politico,15.82504797,76.83150183,7.343450201,229.32
+Trust New Source,BuzzFeed,7.462045259,80.47837296,12.05958178,69.82
+Trust New Source,TheBlaze,88.66270576,3.13626181,8.201032434,205.34
+Trust New Source,Breitbart,87.59667084,0,12.40332916,135.77
+Trust New Source,Slate,4.096233981,89.28374872,6.620017297,127.19
+Religious Service Attendance,Weekly,46,37,17,13155
+Religious Service Attendance,Once or Twice a Month,36,47,17,11214
+Religious Service Attendance,Seldom/ never,28,51,21,10485
+Prayer Frequency,Daily,42,40,18,16369
+Prayer Frequency,Weekly,38,45,17,4159
+Prayer Frequency,Monthly,34,46,20,1310
+Prayer Frequency,Seldom/ never,26,55,20,2306
+Attendance of Prayer Groups,Weekly,45,36,19,8591
+Attendance of Prayer Groups,Once or Twice a Month,41,43,16,2945
+Attendance of Prayer Groups,Several times a year,41,41,17,2883
+Attendance of Prayer Groups,seldom/ never,33,49,19,20395
+Marital Status,Married,35,32,32,6943
+Marital Status,Unmarried,19,41,38,5238
+Interprtation of Scripture,Word of God/ Taken literally,44,38,18,9811
+Interprtation of Scripture,Word of God/ Not taken literally,46,38,16,9542
+Interprtation of Scripture,Word of God / Don't Know,42,29,28,985
+Interprtation of Scripture,Not the Word of God,29,42,29,12132
+TV News Channels,Fox News,49,39,12,2901
+TV News Channels,CNN,23,64,13,2901
+TV News Channels,MSNBC,25,60,15,2901
+TV News Channels,Nightly Network News,29,59,12,2901
+Occupation,Social & Environment,7,93,0,1000
+Occupation,Film & Stage Prod.,7,93,0,1000
+Occupation,Editorial,8,92,0,1000
+Occupation,Libraries,9,91,0,1000
+Occupation,Mental Health,10,90,0,1000
+Occupation,Academia,10,90,0,1000
+Occupation,Art Management,11,89,0,1000
+Occupation,Writing,12,88,0,1000
+Occupation,Performing Arts,13,87,0,1000
+Occupation,Research,14,86,0,1000
+Occupation,Visual Arts,16,84,0,1000
+Occupation,Media Production,17,83,0,1000
+Occupation,Academic Admin.,17,83,0,1000
+Occupation,Social Science,20,80,0,1000
+Occupation,Fitness,20,80,0,1000
+Occupation,Fundraising & Philan.,20,80,0,1000
+Occupation,Teaching,21,79,0,1000
+Occupation,Science & Math,22,78,0,1000
+Occupation,Planning & Arch.,25,75,0,1000
+Occupation,IT,26,74,0,1000
+Occupation,Legal,27,73,0,1000
+Occupation,Publishing,27,73,0,1000
+Occupation,Engineering,29,71,0,1000
+Occupation,Foodservice,30,70,0,1000
+Occupation,Public Relations,32,68,0,1000
+Occupation,Civil Service,33,67,0,1000
+Occupation,Religion,36,64,0,1000
+Occupation,Sports & Games,38,62,0,1000
+Occupation,Personal Services,39,61,0,1000
+Occupation,Medical Services,39,61,0,1000
+Occupation,Garden & Landscape,40,60,0,1000
+Occupation,Retail Trade,41,59,0,1000
+Occupation,Business Operations,42,58,0,1000
+Occupation,Labor,42,58,0,1000
+Occupation,Support Staff,46,54,0,1000
+Occupation,Restaurant & Bar,47,53,0,1000
+Occupation,Physicians,47,53,0,1000
+Occupation,Skilled Trade,48,52,0,1000
+Occupation,Hospitality,51,49,0,1000
+Occupation,Law Enforcement,51,49,0,1000
+Occupation,Animal Care,52,48,0,1000
+Occupation,Real Estate,53,47,0,1000
+Occupation,Investment Banking,53,47,0,1000
+Occupation,Business Leadership,55,45,0,1000
+Occupation,Financial Services,55,45,0,1000
+Occupation,Accounting,55,45,0,1000
+Occupation,Aviation,57,43,0,1000
+Occupation,Wholesaling,57,43,0,1000
+Occupation,Retail Banking,59,41,0,1000
+Occupation,Military,60,40,0,1000
+Occupation,Sales,60,40,0,1000
+Occupation,Entrepreneurial,61,39,0,1000
+Occupation,Transportation,61,39,0,1000
+Occupation,Home Management,61,39,0,1000
+Occupation,Dentistry,63,37,0,1000
+Occupation,Construction,65,35,0,1000
+Occupation,Insurance,66,34,0,1000
+Occupation,Surgical Practice,69,31,0,1000
+Occupation,Farming & Forestry,72,28,0,1000
+Occupation,Fossil Fuels,89,11,0,1000
+Income,<$15K,25,73,2,140
+Income,$15K to $30K,37,60,3,175
+Income,$30K to $50K,43,55,2,186
+Income,$50K to $75K,49,48,3,134
+Income,$75K to $100K,48,51,1,113
+Income,$100K+,49,49,2,252
